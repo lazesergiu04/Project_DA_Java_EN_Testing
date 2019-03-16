@@ -10,7 +10,7 @@ public class ProductModel {
     private Long id;
     private String name;            // Required
     private String description;
-    private String details;
+    private String details;         // TODO: Remove from model as we only need the description
     private String  quantity;       // Required, Integer, Greater than zero
     private String  price;          // Required, Numeric, Greater than zero
 

@@ -41,6 +41,7 @@ public class Product {
         this.description = description;
     }
 
+    // TODO: This is redundant; safely remove
     public String getDetails() {
         return details;
     }
