@@ -1,7 +1,7 @@
 package com.openclassrooms.lambazon.store.domain.repository;
 
 
-import com.openclassrooms.lambazon.store.domain.Product;
+import com.openclassrooms.lambazon.store.domain.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

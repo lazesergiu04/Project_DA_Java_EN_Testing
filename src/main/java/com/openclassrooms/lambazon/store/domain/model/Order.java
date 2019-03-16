@@ -1,6 +1,4 @@
-package com.openclassrooms.lambazon.store.domain;
-
-import com.openclassrooms.lambazon.store.domain.CartLine;
+package com.openclassrooms.lambazon.store.domain.model;
 
 import java.time.LocalDate;
 import java.util.List;

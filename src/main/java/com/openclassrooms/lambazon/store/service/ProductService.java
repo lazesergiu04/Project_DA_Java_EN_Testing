@@ -1,9 +1,9 @@
 package com.openclassrooms.lambazon.store.service;
 
-import com.openclassrooms.lambazon.store.domain.Cart;
-import com.openclassrooms.lambazon.store.domain.CartLine;
-import com.openclassrooms.lambazon.store.domain.Product;
-import com.openclassrooms.lambazon.store.domain.ProductModel;
+import com.openclassrooms.lambazon.store.domain.model.Cart;
+import com.openclassrooms.lambazon.store.domain.model.CartLine;
+import com.openclassrooms.lambazon.store.domain.model.Product;
+import com.openclassrooms.lambazon.store.domain.model.ProductModel;
 import com.openclassrooms.lambazon.store.domain.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

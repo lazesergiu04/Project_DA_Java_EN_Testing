@@ -1,6 +1,6 @@
 package com.openclassrooms.lambazon.store.product;
 
-import com.openclassrooms.lambazon.store.domain.Product;
+import com.openclassrooms.lambazon.store.domain.model.Product;
 import com.openclassrooms.lambazon.store.domain.repository.ProductRepository;
 import com.openclassrooms.lambazon.store.service.ProductService;
 import org.junit.Test;

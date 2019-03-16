@@ -1,4 +1,4 @@
-package com.openclassrooms.lambazon.store.domain;
+package com.openclassrooms.lambazon.store.domain.model;
 
 import java.util.ArrayList;
 import java.util.List;

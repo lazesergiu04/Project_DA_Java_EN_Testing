@@ -1,4 +1,4 @@
-package com.openclassrooms.lambazon.store.domain;
+package com.openclassrooms.lambazon.store.domain.model;
 
 public class CartLine {
 
