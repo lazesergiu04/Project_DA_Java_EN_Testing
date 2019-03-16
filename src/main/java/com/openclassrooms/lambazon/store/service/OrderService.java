@@ -1,10 +1,9 @@
 package com.openclassrooms.lambazon.store.service;
 
-import com.openclassrooms.lambazon.store.order.Cart;
-import com.openclassrooms.lambazon.store.order.Order;
-import com.openclassrooms.lambazon.store.order.OrderRepository;
-import com.openclassrooms.lambazon.store.product.Product;
-import com.openclassrooms.lambazon.store.service.ProductService;
+import com.openclassrooms.lambazon.store.domain.Cart;
+import com.openclassrooms.lambazon.store.domain.Order;
+import com.openclassrooms.lambazon.store.domain.OrderRepository;
+import com.openclassrooms.lambazon.store.domain.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

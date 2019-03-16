@@ -1,4 +1,4 @@
-package com.openclassrooms.lambazon.store.product;
+package com.openclassrooms.lambazon.store.domain;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

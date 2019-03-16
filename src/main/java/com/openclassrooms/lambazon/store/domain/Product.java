@@ -1,4 +1,4 @@
-package com.openclassrooms.lambazon.store.product;
+package com.openclassrooms.lambazon.store.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

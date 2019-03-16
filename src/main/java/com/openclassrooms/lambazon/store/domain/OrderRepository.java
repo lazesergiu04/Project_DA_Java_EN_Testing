@@ -1,4 +1,4 @@
-package com.openclassrooms.lambazon.store.order;
+package com.openclassrooms.lambazon.store.domain;
 
 import org.springframework.stereotype.Repository;
 

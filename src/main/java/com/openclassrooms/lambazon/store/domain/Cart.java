@@ -1,6 +1,4 @@
-package com.openclassrooms.lambazon.store.order;
-
-import com.openclassrooms.lambazon.store.product.Product;
+package com.openclassrooms.lambazon.store.domain;
 
 import java.util.ArrayList;
 import java.util.List;

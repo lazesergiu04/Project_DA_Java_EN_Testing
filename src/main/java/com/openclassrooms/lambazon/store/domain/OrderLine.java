@@ -1,6 +1,5 @@
-package com.openclassrooms.lambazon.store.order;
+package com.openclassrooms.lambazon.store.domain;
 
-import com.openclassrooms.lambazon.store.product.Product;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
