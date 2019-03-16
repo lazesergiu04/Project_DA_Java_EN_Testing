@@ -1,4 +1,4 @@
-package com.openclassrooms.shopmanager.config;
+package com.openclassrooms.lambazon.store.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

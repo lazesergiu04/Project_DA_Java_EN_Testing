@@ -1,4 +1,4 @@
-package com.openclassrooms.shopmanager.order;
+package com.openclassrooms.lambazon.store.order;
 
 import java.time.LocalDate;
 import java.util.List;

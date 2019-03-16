@@ -1,4 +1,4 @@
-package com.openclassrooms.shopmanager.product;
+package com.openclassrooms.lambazon.store.product;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

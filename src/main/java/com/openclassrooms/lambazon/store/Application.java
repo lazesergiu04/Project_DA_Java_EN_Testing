@@ -1,4 +1,4 @@
-package com.openclassrooms.shopmanager;
+package com.openclassrooms.lambazon.store;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

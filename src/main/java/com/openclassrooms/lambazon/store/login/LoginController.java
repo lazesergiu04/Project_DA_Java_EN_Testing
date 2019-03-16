@@ -1,4 +1,4 @@
-package com.openclassrooms.shopmanager.login;
+package com.openclassrooms.lambazon.store.login;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

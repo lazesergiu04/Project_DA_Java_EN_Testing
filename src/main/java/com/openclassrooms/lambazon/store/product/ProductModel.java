@@ -1,4 +1,4 @@
-package com.openclassrooms.shopmanager.product;
+package com.openclassrooms.lambazon.store.product;
 
 public class ProductModel {
 

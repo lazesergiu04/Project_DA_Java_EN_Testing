@@ -1,7 +1,7 @@
-package com.openclassrooms.shopmanager.product;
+package com.openclassrooms.lambazon.store.product;
 
-import com.openclassrooms.shopmanager.order.Cart;
-import com.openclassrooms.shopmanager.order.CartLine;
+import com.openclassrooms.lambazon.store.order.Cart;
+import com.openclassrooms.lambazon.store.order.CartLine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

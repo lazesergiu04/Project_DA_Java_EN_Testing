@@ -1,6 +1,6 @@
-package com.openclassrooms.shopmanager.order;
+package com.openclassrooms.lambazon.store.order;
 
-import com.openclassrooms.shopmanager.product.Product;
+import com.openclassrooms.lambazon.store.product.Product;
 
 public class CartLine {
 
