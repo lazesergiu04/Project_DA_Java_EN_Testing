@@ -1,5 +1,10 @@
 package com.openclassrooms.lambazon.store.domain.model;
 
+/**
+ * FIXME: This should be removed and replaced with the Product domain entity.
+ * @deprecated Replace with {@link Product} domain entity and remove
+ */
+@Deprecated
 public class ProductModel {
 
     private Long id;
