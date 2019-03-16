@@ -1,5 +1,6 @@
 package com.openclassrooms.lambazon.store.product;
 
+import com.openclassrooms.lambazon.store.service.ProductService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

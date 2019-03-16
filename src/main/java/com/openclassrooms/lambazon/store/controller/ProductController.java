@@ -1,7 +1,7 @@
 package com.openclassrooms.lambazon.store.controller;
 
 import com.openclassrooms.lambazon.store.product.ProductModel;
-import com.openclassrooms.lambazon.store.product.ProductService;
+import com.openclassrooms.lambazon.store.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
