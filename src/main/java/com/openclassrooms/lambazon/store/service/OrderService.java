@@ -14,6 +14,7 @@ public class OrderService {
     private OrderRepository orderRepository;
     private ProductService productService;
 
+    // FIXME: Using a single cart to prove the concept. Remember to persist this in the session.
     private Cart cart = new Cart();
 
 
