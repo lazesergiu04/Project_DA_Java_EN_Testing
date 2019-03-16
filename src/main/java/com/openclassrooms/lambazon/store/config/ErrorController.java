@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 
+// FIXME: This should be in the controller package
 @ControllerAdvice
 public class ErrorController {
-
     private static Logger logger = LoggerFactory.getLogger(ErrorController.class);
 
     @ExceptionHandler(Throwable.class)
