@@ -13,6 +13,7 @@ import javax.validation.Valid;
 @Controller
 public class OrderController {
 
+    private Boolean enableCheckoutsSwitch = true;
     private OrderService orderService;
 
     @Autowired
@@ -61,7 +62,8 @@ public class OrderController {
             result.reject("cart.empty");
         }
 
-        if (!result.hasErrors()) {
+        // TODO: We no longer need this enabled checkout feature switch. Remove it.
+        if (!result.hasErrors() && enableCheckoutsSwitch) {
             orderService.createOrder(order);
             return "orderCompleted";
         } else {
