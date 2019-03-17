@@ -10,14 +10,14 @@ import java.util.List;
 // FIXME: Move into repository package
 public class OrderRepository {
 
-    private List<Order> orders  = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>();
 
     /**
      * Saves an order
+     *
      * @param order order to be saved
      */
-    public void save(Order order)
-    {
+    public void save(Order order) {
         orders.add(order);
     }
 }
