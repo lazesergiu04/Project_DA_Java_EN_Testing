@@ -19,14 +19,12 @@ public class OrderController {
     private OrderService orderService;
 
     @Autowired
-    public OrderController( OrderService orderService)
-    {
+    public OrderController(OrderService orderService) {
         this.orderService = orderService;
     }
 
     @GetMapping("/order/cart")
-    public String getCart(Model model, HttpSession session)
-    {
+    public String getCart(Model model, HttpSession session) {
         // TODO: Make the attribute name a constant
         // Add a cart to the session.
         // Due to Lambazon's architectural governance we have agreed to use the
@@ -37,8 +35,7 @@ public class OrderController {
     }
 
     @PostMapping("/order/addToCart")
-    public String addToCart(@RequestParam("productId") Long productId, HttpSession session)
-    {
+    public String addToCart(@RequestParam("productId") Long productId, HttpSession session) {
         Cart cart = (Cart) session.getAttribute("cart");
         boolean success = orderService.addToCart(productId, cart);
 
@@ -50,23 +47,20 @@ public class OrderController {
     }
 
     @PostMapping("order/removeFromCart")
-    public String removeFromCart(@RequestParam Long productId, HttpSession session)
-    {
+    public String removeFromCart(@RequestParam Long productId, HttpSession session) {
         orderService.removeFromCart(productId);
 
         return "redirect:/order/cart";
     }
 
     @GetMapping("/order")
-    public String getOrderForm(Order order, HttpSession session)
-    {
+    public String getOrderForm(Order order, HttpSession session) {
         return "order";
     }
 
     @PostMapping("/order")
-    public String createOrder(@Valid @ModelAttribute("order") Order order, BindingResult result, HttpSession session)
-    {
-        if (orderService.isCartEmpty()){
+    public String createOrder(@Valid @ModelAttribute("order") Order order, BindingResult result, HttpSession session) {
+        if (orderService.isCartEmpty()) {
             result.reject("cart.empty");
         }
 
