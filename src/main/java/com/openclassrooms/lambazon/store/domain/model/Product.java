@@ -68,10 +68,14 @@ public class Product implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
+    public boolean equals(Object obj) {
+        // We always use parenthasis with conditionals to reduce the risk of
+        // accidental flow control issues when making future changes.
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Product product = (Product) obj;
         return Objects.equals(id, product.id);
     }
 
