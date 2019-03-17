@@ -1,6 +1,8 @@
 package com.openclassrooms.lambazon.store.domain.model;
 
-public class CartLine {
+import java.io.Serializable;
+
+public class CartLine implements Serializable {
 
    private int orderLineID;
    private Product product;

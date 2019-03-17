@@ -1,10 +1,11 @@
 package com.openclassrooms.lambazon.store.domain.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class Cart {
+public class Cart implements Serializable {
 
     private List<CartLine> cartLineList = new ArrayList<>();
 

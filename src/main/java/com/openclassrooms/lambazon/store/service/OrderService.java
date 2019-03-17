@@ -25,10 +25,11 @@ public class OrderService {
         this.productService = productService;
     }
 
-    public boolean addToCart(Long productId){
+    public boolean addToCart(Long productId, Cart cart){
+        // FIXME: Use session cart
         Product product = productService.getByProductId(productId);
         if (product !=null){
-            cart.addItem(product , 1);
+            this.cart.addItem(product , 1);
             return true;
         }
         return false;
