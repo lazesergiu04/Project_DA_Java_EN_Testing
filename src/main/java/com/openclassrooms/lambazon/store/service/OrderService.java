@@ -19,28 +19,25 @@ public class OrderService {
 
 
     @Autowired
-    public OrderService(OrderRepository orderRepository, ProductService productService)
-    {
+    public OrderService(OrderRepository orderRepository, ProductService productService) {
         this.orderRepository = orderRepository;
         this.productService = productService;
     }
 
-    public boolean addToCart(Long productId, Cart cart){
+    public boolean addToCart(Long productId, Cart cart) {
         // FIXME: Use session cart
         Product product = productService.getByProductId(productId);
-        if (product !=null){
-            this.cart.addItem(product , 1);
+        if (product != null) {
+            this.cart.addItem(product, 1);
             return true;
         }
         return false;
     }
 
     /**
-     *
      * @param order Order to be saved
      */
-    public void saveOrder(Order order)
-    {
+    public void saveOrder(Order order) {
         orderRepository.save(order);
         productService.updateProductQuantities(this.cart);
     }
@@ -48,13 +45,13 @@ public class OrderService {
     /**
      * @return Returns the single instance of cart in the application
      */
-    public Cart getCart(){
+    public Cart getCart() {
         return this.cart;
     }
 
     public void removeFromCart(Long productId) {
         Product product = productService.getByProductId(productId);
-        if (product !=null) {
+        if (product != null) {
             getCart().removeLine(product);
         }
     }
