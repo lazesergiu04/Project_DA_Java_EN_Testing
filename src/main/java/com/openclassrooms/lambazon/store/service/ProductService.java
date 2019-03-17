@@ -37,11 +37,11 @@ public class ProductService {
         return productRepository.findAllByOrderByIdDesc();
     }
 
-    public Product getByProductId(Long productId){
+    public Product getByProductId(Long productId) {
         return productRepository.findById(productId).get();
     }
 
-    public void createProduct(ProductModel productModel){
+    public void createProduct(ProductModel productModel) {
         Product product = new Product();
         product.setDescription(productModel.getDescription());
         product.setDetails(productModel.getDetails());
@@ -52,23 +52,23 @@ public class ProductService {
         productRepository.save(product);
     }
 
-    public void deleteProduct(Long productId){
+    public void deleteProduct(Long productId) {
         // TODO what happens if a product has been added to a cart and has been later removed from the inventory ?
         // delete the product form the cart by using the specific method
         // => the choice is up to the student
         productRepository.deleteById(productId);
     }
 
-    public void updateProductQuantities(Cart cart){
+    public void updateProductQuantities(Cart cart) {
 
         for (CartLine cartLine : cart.getCartLineList()) {
             Optional<Product> productOptional = productRepository.findById(cartLine.getProduct().getId());
-            if (productOptional.isPresent()){
+            if (productOptional.isPresent()) {
                 Product product = productOptional.get();
                 product.setQuantity(product.getQuantity() - cartLine.getQuantity());
-                if (product.getQuantity()<1){
+                if (product.getQuantity() < 1) {
                     productRepository.delete(product);
-                }else {
+                } else {
                     productRepository.save(product);
                 }
             }
