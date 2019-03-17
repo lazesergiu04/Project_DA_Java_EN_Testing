@@ -46,7 +46,7 @@ public class OrderController {
         }
     }
 
-    @PostMapping("order/removeFromCart")
+        @PostMapping("order/removeFromCart")
     public String removeFromCart(@RequestParam Long productId, HttpSession session) {
         orderService.removeFromCart(productId);
 

@@ -1,8 +1,7 @@
-package com.openclassrooms.lambazon.store.product;
+package com.openclassrooms.lambazon.store.service;
 
 import com.openclassrooms.lambazon.store.domain.model.Product;
 import com.openclassrooms.lambazon.store.domain.repository.ProductRepository;
-import com.openclassrooms.lambazon.store.service.ProductService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
