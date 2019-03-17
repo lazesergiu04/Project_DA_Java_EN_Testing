@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class LoginController {
 
+    // TODO: put all the strings into constants
     @GetMapping( value = {"/login"})
     public String login(Model model) {
         return "login";
