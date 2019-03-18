@@ -21,7 +21,7 @@
         <form action="#" th:action="@{/order}" th:object="${order}" method="post">
 
             <div class="text-danger validation-summary-valid" data-valmsg-summary="true">
-                <ul th:if="${#fields.hasErrors('*')}">
+                <ul id="errors" th:if="${#fields.hasErrors('*')}">
                     <li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input is incorrect</li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <input class="btn btn-primary" type="submit" value="Complete order"/>
+                <input id="order-button" class="btn btn-primary" type="submit" value="Complete order"/>
             </div>
         </form>
         <div th:replace="fragments :: footer">Footer</div>
