@@ -20,5 +20,6 @@ To run the tests or build without checkstyle failing you can use `-Dcheckstyle.s
 1. The running app's client facing page can be seen at `http://localhost:8080/`
 1. The admin portal for managing inventory is located at `http://localhost:8080/admin/product`
 1. We value committing your code regularly.
+1. `mvn test` will run both checkstyle and jacoco coverage reporting. Look in `target/sites`.
 
 
