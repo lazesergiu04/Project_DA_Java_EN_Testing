@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.openclassrooms</groupId>
-	<artifactId>P3_AddNewFunctionalitySpringBoot</artifactId>
+	<artifactId>java-project3-openclassrooms-lambazon-store</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>P3_AddNewFunctionalitySpringBoot</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Project3 OpenClassrooms Lambazon Store Testing</name>
+	<description>Lambazon beta store requiring testing</description>
 
 	<properties>
 		<java.version>1.8</java.version>
