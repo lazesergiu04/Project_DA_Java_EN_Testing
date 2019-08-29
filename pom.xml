@@ -196,7 +196,7 @@
                 </executions>
                 <configuration>
                     <effort>High</effort>
-                    <threshold>Low</threshold>
+                    <threshold>Medium</threshold>
                     <xmlOutput>true</xmlOutput>
                 </configuration>
             </plugin>
