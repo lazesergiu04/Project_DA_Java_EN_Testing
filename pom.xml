@@ -181,7 +181,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
@@ -189,15 +188,15 @@
                 <executions>
                     <execution>
                         <id>findbugs-report</id>
-                        <phase>test</phase>
+                        <phase>process-sources</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <effort>Low</effort>
-                    <threshold>Medium</threshold>
+                    <effort>High</effort>
+                    <threshold>Low</threshold>
                     <xmlOutput>true</xmlOutput>
                 </configuration>
             </plugin>
@@ -229,6 +228,18 @@
                     <skip>true</skip>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.5</version>
+                <configuration>
+                    <effort>High</effort>
+                    <threshold>Low</threshold>
+                    <xmlOutput>true</xmlOutput>
+                </configuration>
+            </plugin>
+
         </plugins>
     </reporting>
 </project>
