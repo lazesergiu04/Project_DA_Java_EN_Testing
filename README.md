@@ -11,6 +11,11 @@ As the next developer on this project you are required to:
 * All work on this project is delivered using TDD and respects the
 Testing Pyramid.
 
+
+Note from last maintainer:
+*PLEASE READ THE [OUTSTANDING-ISSUES.md](./OUTSTANDING-ISSUES.md) TO RESOLVE ISSUES
+WHICH CURRENTLY BREAK THE BUILD*
+
 # Handover Notes
 
 1. Lee the previous developer did not have a chance to clean up the codebase.
