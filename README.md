@@ -11,6 +11,11 @@ As the next developer on this project you are required to:
 * All work on this project is delivered using TDD and respects the
 Testing Pyramid.
 
+
+Note from last maintainer:
+*PLEASE READ THE [OUTSTANDING-ISSUES.md](./OUTSTANDING-ISSUES.md) TO RESOLVE ISSUES
+WHICH CURRENTLY BREAK THE BUILD*
+
 # Handover Notes
 
 1. Lee the previous developer did not have a chance to clean up the codebase.
@@ -21,5 +26,5 @@ To run the tests or build without checkstyle failing you can use `-Dcheckstyle.s
 1. The admin portal for managing inventory is located at `http://localhost:8080/admin/product`
 1. We value committing your code regularly.
 1. `mvn test` will run both checkstyle and jacoco coverage reporting. Look in `target/sites`.
-
+1. To generate all reports (including Findbugs, run `mvn site`)
 
