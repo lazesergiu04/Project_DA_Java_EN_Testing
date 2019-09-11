@@ -1,13 +1,14 @@
 # Hand Over of Outstanding Issues
 
-As part of my handover on leaving, the following issues, reporting when you run checkstyle need fixing. 
+As part of the maintainer's handover on leaving, please note that issues raised reported by checkstyle
+need to be fixed IN ORDER TO BUILD THE PROJECT.
 
 The exact rectification is IN the error message. Please read it. You will see the same error 
 message when running ```mvnw test``` Since the output of that command represents the current state
 of the code - use that as your main source.
 
 You will not be able to build the project and run tests until these are fixed.
-Please remove this file when you're done.
+Please remove issues from this file as you fix them!
 
 
 # Splitting one variable declaration into several
