@@ -1,4 +1,4 @@
-#Hand Over of Outstanding Issues
+# Hand Over of Outstanding Issues
 
 As part of my handover on leaving, the following issues, reporting when you run checkstyle need fixing. 
 
@@ -10,7 +10,12 @@ You will not be able to build the project and run tests until these are fixed.
 Please remove this file when you're done.
 
 
-#Splitting one variable declaration into several
+# Splitting one variable declaration into several
+
+
+
+## Product (String Field declarations)
+
 ```
 [WARNING] src/main/java/com/openclassrooms/lambazon/store/domain/model/Product.java:[17] (whitespace) EmptyLineSeparator: ',' should be separated from previous statement.
 ```
@@ -19,18 +24,23 @@ Please remove this file when you're done.
 ```
 
 
-#Never use an **IF** without {}'s 
+# Never use an **IF** without {}'s 
+
+## Product::equals
+
 ```
 [WARNING] src/main/java/com/openclassrooms/lambazon/store/domain/model/Product.java:[77] (blocks) NeedBraces: 'if' construct must use '{}'s.
 ```
 
 
-#Shorten long lines
+# Shorten long lines
+
+## Cart::findProductInCartLines
 ```
 [WARNING] src/main/java/com/openclassrooms/lambazon/store/domain/model/Cart.java:[89] (sizes) LineLength: Line is longer than 120 characters (found 124).
 ```
 
-#Move the { to the same line as the method declaration
+# Move the { to the same line as the method declaration
 _Standard Java Style: opening brace is on the same line, not only for the blocks inside a function, but also for class or method declarations_
 
 ## ProductController::createProduct
