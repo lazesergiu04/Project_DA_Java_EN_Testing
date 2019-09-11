@@ -1,6 +1,6 @@
 # Hand Over of Outstanding Issues
 
-As part of the maintainer's handover on leaving, please note that issues raised reported by checkstyle
+As part of the maintainer's handover on leaving, please note that issues reported by checkstyle
 need to be fixed IN ORDER TO BUILD THE PROJECT.
 
 The exact rectification is IN the error message. Please read it. You will see the same error 
